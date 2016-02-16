@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Ejercicio Ruby/SRC/Biblioteca/Biblioteca&apos; to &apos;DAO&apos;" description="Rename resource &apos;Biblioteca&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="SRC/Biblioteca/Biblioteca" name="DAO" stamp="1453382057778" updateReferences="true"/>
+</session>

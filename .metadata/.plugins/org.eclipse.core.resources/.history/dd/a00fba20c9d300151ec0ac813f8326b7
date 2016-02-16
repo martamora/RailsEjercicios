@@ -1,0 +1,40 @@
+<h1> Lista de Registros </h1>
+
+<table>
+	<tr>
+		<th>Titulo</th>
+		<th>Comentarios</th>
+		<th> Borrar</th>
+		<th> Modificar</th>
+	</tr>
+	<tbody>
+	<%
+		@registros=Registro.all
+	 for registro in @registros %>
+	<tr>
+		<td><%=registro.titulo%></td>
+		<td><%=registro.comentarios%></td>
+		<td><a href ="/registro/delete?titulo=<%=registro.titulo%>"</a>Borrar</td>
+		<td><a href ="/registro/update_vista?id=<%=registro.id%>"</a>Modificar</td>
+	</tr>
+<% end%>
+	</tbody>
+</table>
+
+<%= form_tag({controller:"registro",action:"create"},method:"get") do %>
+
+	<%= label_tag(:titulo, "Titulo:")%>
+	<%= text_field_tag(:titulo)%><br/>
+	
+	<%= label_tag(:comentarios, "Comentarios")%><br />
+	<%= text_field_tag(:comentarios)%><br />
+	<%= submit_tag("Crear")%>
+<%end%>
+
+<% if @registro !=nil && @registro.errors.any? %>
+	<ul> 
+		<% @registro.errors.full_message.each do |mensaje_error| %>
+			<li> <%=mensaje_error%></li>
+		<% end%>
+	</ul>
+<%end%>

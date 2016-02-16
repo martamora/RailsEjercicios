@@ -1,0 +1,26 @@
+<h1>Formulario Index Templates</h1>
+
+<%
+variable_enlace = "rutas"
+variable_mostrar = "Rutas"
+%>
+
+
+<br/>
+<%=render partial: "template_enlace_dinamico",
+	locals:{direccionWeb: variable_enlace, direccionMostrar: variable_rutas}
+
+%>
+<br>
+<%
+variable_enlace = "Mostrar"
+variable_mostrar = "Mostrar"
+
+%>
+<%=render partial: "template_enlace_dinamico",
+	locals:{direccionWeb: variable_enlace, direccionMostrar: variable_mostrar}
+
+%>
+
+
+

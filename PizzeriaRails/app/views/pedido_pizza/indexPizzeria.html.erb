@@ -1,0 +1,38 @@
+<!DOCTYPE  html>
+<head>
+	<title> Pedidos Mora's Pizzas</title>
+</head>
+<body>
+	<h1>Bienvenidos a Mora's Pizza</h1>
+
+	<form action="/pedido_pizza/gestionPedido" method="get">
+		<table "class=datos">
+			<tr>
+				<th>Introduzca Dirección: <input type="text" name="direccion"/></th><br>
+			</tr>
+			<tr><th>Introduzca Teléfono:  <input type="text" name="telefono"/></th>
+			</tr>
+			<tr><th>Selecciona Tamaño <select name= "tamaño">
+					<option>Pequeño</option>
+					<option>Mediano</option>
+					<option>Grande</option>
+			</tr>
+			
+			</table>
+			<br>
+			<br>
+				 <fieldset style="background-color: lightblue" >
+
+				</select></th>
+				Seleccion Ingredientes:<br>
+					<input type="checkbox" name="ingredientes[]" value="queso"/> Queso <br>
+					<input type="checkbox" name="ingredientes[]" value="bacon"/> Bacon <br>
+					<input type="checkbox" name="ingredientes[]" value="carne"/> Carne <br>
+					<input type="checkbox" name="ingredientes[]" value="champiñon"/> Champiñon <br>
+				</th>
+				<th><input type="submit" value="Enviar Pedido"/> <br></th>
+			</tr>
+		
+
+	</form>
+</body>

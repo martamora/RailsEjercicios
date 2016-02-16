@@ -1,0 +1,13 @@
+load 'Ordenador.rb'
+load 'Procesador.rb'
+load 'Ram.rb'
+load 'Almacenamiento.rb'
+load 'TGrafica.rb'
+
+tgrafica =TGrafica.new("2GB", "NVIDIA GTX960")
+almacenamiento =Almacenamiento.new("HDD", "7200rpm", "1TB")
+ram =Ram.new("1TB", "UNB-DIMM DDR3L")
+procesador =Procesador.new("8MB", "2", "340Ghz", "Intel Core i7")
+ordenador1=Ordenador.new("Acer", "Windows")
+
+

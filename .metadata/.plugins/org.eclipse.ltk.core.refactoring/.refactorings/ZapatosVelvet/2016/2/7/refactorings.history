@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ZapatosVelvet/app/views/zapatos_velvet/modificar_vista.hml.erb&apos; to &apos;modificar_vista.html.erb&apos;" description="Rename resource &apos;modificar_vista.hml.erb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/views/zapatos_velvet/modificar_vista.hml.erb" name="modificar_vista.html.erb" stamp="1455538695092" updateReferences="true"/>
+</session>

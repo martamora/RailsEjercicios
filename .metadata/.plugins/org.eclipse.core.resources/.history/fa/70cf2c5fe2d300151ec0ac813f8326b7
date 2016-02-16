@@ -1,0 +1,21 @@
+class MusicaController < ApplicationController
+  def index
+    @musicas= Musica.all
+  end
+  
+  def new
+    nombre=params[:nombre]
+    artista=params[:artista]
+    anio=params[:anio].to_i
+    
+  end
+  def borrar
+    
+  end
+  def modificar_vista
+    
+  end
+  def modificar
+    
+  end
+end

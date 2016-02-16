@@ -1,0 +1,17 @@
+class Musica < ActiveRecord::Base
+  
+  #No puede haber registros vacíos
+  validates_presence_of :nombre, message: 'El campo nombre no puede estar vacío'
+  validates_presence_of :artista, message: 'El campo artista no puede estar vacío'
+  validates_presence_of :anio, message: 'El campo anio no puede estar vacío'
+  
+  #No puede haber discos con el mismo nombre
+  
+  validates_uniqueness_of :nombre, message: 'El nombre de los discos no puede estar repetido'
+
+  #El año tiene que ser mayor que 1000
+  
+  
+  
+
+end

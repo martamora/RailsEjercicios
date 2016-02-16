@@ -1,0 +1,7 @@
+load 'modelo/Persona.rb'
+load 'dao/LogDao.rb'
+load 'dao/PersonasDAO.rb'
+load 'negocio/gestionPersonasLN.rb'
+
+puts "Inicializando....."
+negocio= GestionPersonasLN.new()

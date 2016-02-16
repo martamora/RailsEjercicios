@@ -1,0 +1,28 @@
+<h1> Lista de Registros </h1>
+
+<table>
+	<tr>
+		<th>Titulo</th>
+		<th>Comentarios</th>
+	</tr>
+	<tbody>
+	<% for registro in @registros %>
+	<tr>
+		<td><%=registro.titulo%></td>
+		<td><%=registro.comentarios%></td>
+		<td><a href ="/registro/delete?titulo=<%=registro.titulo%>"</a>Borrar</td>
+		<td><a href ="/registro/update_vista?id=<%=registro.id%>"</a>Modificar</td>
+	</tr>
+<% end%>
+	</tbody>
+</table>
+
+<%= form_tag({controller:"registro",action:"create"},method:"get") do %>
+
+	<%= label_tag(:titulo, "Titulo:")%>
+	<%= text_field_tag(:titulo)%><br/>
+	
+	<%= label_tag(:comentarios, "Comentarios")%>
+	<%= text_field_tag(:comentarios)%><br />
+	<%= submit_tag("Crear")%>
+<%end%>

@@ -1,0 +1,2 @@
+El nombre introducido ha sido <%=params[:nombre]%> <br>
+Los numeros que ha elegido son <%=params[:check_box_numeros]%>

@@ -1,0 +1,10 @@
+class TGrafica
+  def initialize (capacidad, modelo)
+    @capacidad = capacidad
+    @modelo = modelo
+  end
+  
+  def to_s
+  "#{capacidad}, #{modelo}"
+  end
+end

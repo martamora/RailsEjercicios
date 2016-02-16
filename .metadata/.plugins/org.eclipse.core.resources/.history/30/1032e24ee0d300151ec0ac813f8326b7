@@ -1,0 +1,19 @@
+<table>
+	<tr>
+		<th>Nombre</th>
+		<th>Artista</th>
+		<th>Anio</th>
+		<th>Borrar</th>
+		<th>Modificar</th>
+	</tr>
+	<%for musica in @musicas %>
+	<tr>
+		<td><%=musica.nombre%></td>
+		<td><%=musica.artista%></td>
+		<td><%=musica.anio%></td>
+		<td><a href="/musica/borrar?id=<%musica.id%>">Borrar</a></td>
+		<td><a href="/musica/modificar_vista?id=<%musica.id%>">Modificar</a></td>
+	</tr>
+	
+	<%end%>
+</table>

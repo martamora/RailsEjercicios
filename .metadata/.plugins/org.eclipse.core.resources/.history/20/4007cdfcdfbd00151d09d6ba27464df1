@@ -1,0 +1,10 @@
+class Ram
+  def initialize (capacidad, tipo)
+    @capacidad = capacidad
+    @tipo = tipo
+  end
+  
+def to_s
+  "#{capcidad}, #{tipo}"
+end
+end

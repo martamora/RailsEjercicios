@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;EjercicioTemplates/app/views/formulario/template_enlace_dinamico.html.erb&apos; to &apos;_template_enlace_dinamico.html.erb&apos;" description="Rename resource &apos;template_enlace_dinamico.html.erb&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="app/views/formulario/template_enlace_dinamico.html.erb" name="_template_enlace_dinamico.html.erb" stamp="1455109808647" updateReferences="true"/>
+</session>

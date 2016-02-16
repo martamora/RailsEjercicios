@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+<server host="0.0.0.0" port="3000" type="org.radrails.rails.railsServer">
+<name>EjercicioUsuarioControlador</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/PizzeriaRails" type="org.radrails.rails.railsServer">
+<name>PizzeriaRails</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/GestoriaClientesRails" type="org.radrails.rails.railsServer">
+<name>GestoriaClientesRails</name>
+</server>
+<server host="0.0.0.0" port="3000" type="org.radrails.rails.railsServer">
+<name>EjercicioClientes</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/RailsTemplates" type="org.radrails.rails.railsServer">
+<name>RailsTemplates</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/Rails ServicioRest" type="org.radrails.rails.railsServer">
+<name>Rails ServicioRest</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/EjercicioTemplates" type="org.radrails.rails.railsServer">
+<name>EjercicioTemplates</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/RailsBasesDeDatos" type="org.radrails.rails.railsServer">
+<name>RailsBasesDeDatos</name>
+</server>
+<server host="0.0.0.0" port="3000" project="C:/Users/Arranque 1/Desktop/Modulo Ruby/Workspace/MusicaRails" type="org.radrails.rails.railsServer">
+<name>MusicaRails</name>
+</server>
+<server host="0.0.0.0" port="3000" type="org.radrails.rails.railsServer">
+<name>EjercicioTiendaDiscos</name>
+</server>
+</servers>

@@ -1,0 +1,7 @@
+<form action="/musica/new">
+	Nombre: <input type="text" name="nombre" /><br />
+	Artista: <input type="text" name="artista" /><br />
+	Anio: <input type="number" name="anio" /><br />
+	<input type="submit" name="crear"  value="crear"/><br />
+	
+</form>

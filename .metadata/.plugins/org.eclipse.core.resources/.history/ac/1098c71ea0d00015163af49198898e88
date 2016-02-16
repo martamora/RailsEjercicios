@@ -1,0 +1,27 @@
+class RegistroController < ApplicationController
+  def new
+    #Registro.all nos devuelve todos los registros de la bbdd
+    #Al herededar de ActiveRecord, estarán automáticamente implementados
+    #sus accesos. Los registros van en un array
+    @registros = Registro.all
+    if @registros.size >0
+      puts @registros[0].titulo
+      puts @resgitros.first.id
+      puts @registros.last.id
+    end
+  end
+  def create
+    titulo=params[:titulo]
+    comentarios=params[:comentarios]
+    parametrosHash = {}
+    #La clave corresponde con el nombre de la columan de la base de datos
+    parametrosHash[:titulo]
+    parametrosHash[:comentarios]
+
+    #Le pasamos el Hash
+    Registro.create(parametrosHash)
+    @registros= Registro.all
+    render "new"
+  end
+  
+end

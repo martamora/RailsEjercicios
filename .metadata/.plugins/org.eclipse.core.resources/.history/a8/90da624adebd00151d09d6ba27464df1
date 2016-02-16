@@ -1,0 +1,12 @@
+load 'Ordenador.rb'
+load 'Procesador.rb'
+load 'Ram.rb'
+load 'Almacenamiento.rb'
+load 'TGrafica.rb'
+
+tgrafica =TGrafica.new(capacidad, modelo)
+almacenamiento =Almacenamiento.new()
+
+procesador =Procesador.new
+memoria =Memoria.new
+

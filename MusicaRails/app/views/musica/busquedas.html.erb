@@ -1,0 +1,51 @@
+<h3>Busquedas por año</h3>
+<form action="/musica/buscar_por_anio">
+	
+	Anio: <input type="number" name="anio" /><br/>
+	<input type="submit" value="Buscar" />
+</form>
+
+<% if @musicaEncontrada != nil%>
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Artista</th>
+			<th>Anio</th>
+		</tr>
+		
+		<%for musica in @musicaEncontrada%>
+		<tr>
+			<td><%=musica.nombre%></td>
+			<td><%=musica.artista%></td>
+			<td><%=musica.anio%></td>
+		</tr>
+		<%end%>
+		
+	</table>
+<%end%>
+
+<h3>Busquedas por artista</h3>
+<form action="/musica/buscar_por_artista">
+	
+	Artista: <input type="text" name="artista" /><br/>
+	<input type="submit" value="Buscar" />
+</form>
+
+<% if @musicaEncontrada != nil%>
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Artista</th>
+			<th>Anio</th>
+		</tr>
+		
+		<%for musica in @musicaEncontrada%>
+		<tr>
+			<td><%=musica.nombre%></td>
+			<td><%=musica.artista%></td>
+			<td><%=musica.anio%></td>
+		</tr>
+		<%end%>
+		
+	</table>
+<%end%>

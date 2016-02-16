@@ -1,0 +1,9 @@
+
+<form action="/clientes/alta">
+	Nombre<input type="text" name="nombre"value="<%=@cliente.nombre%>"/>
+	Apellidos<input type="text" name="apellidos"value="<%=@cliente.apellidos%>"/>
+	Edad<input type="number" name="edad"value="<%=@cliente.edad%>"/>
+	Telefono<input type="tel" name="telefono" value="<%=@cliente.telefono%>"/>
+	<input type="submit" name="enviar" value="Alta"/>
+	<input type="hidden" name="id" value="<%=@cliente.id%>"/>
+</form>

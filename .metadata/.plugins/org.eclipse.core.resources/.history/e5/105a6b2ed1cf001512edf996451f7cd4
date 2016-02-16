@@ -1,0 +1,14 @@
+class ApplicationController < ActionController::Base
+  # Prevent CSRF attacks by raising an exception.
+  # For APIs, you may want to use :null_session instead.
+  protect_from_forgery with: :exception
+  
+  before_action :procesar_antes_de_nada
+  
+  def procesar_antes_de_nada
+    
+    puts "********* Llamada a la aplicacion************"
+    @nombreUsuario= "Marta"
+    
+  end
+end

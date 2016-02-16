@@ -1,0 +1,2 @@
+module AdiosMundoCruelHelper
+end

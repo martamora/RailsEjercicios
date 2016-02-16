@@ -1,0 +1,5 @@
+load 'Ordenador.rb'
+load 'Procesador.rb'
+load 'Ram.rb'
+load 'Almacenamiento.rb'
+load 'TGrafica.rb'

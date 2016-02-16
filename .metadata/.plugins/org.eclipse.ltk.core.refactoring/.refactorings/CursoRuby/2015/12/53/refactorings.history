@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;CursoRuby/src/_02_LecturaTeclado&apos; to &apos;_03_LecturaTeclado&apos;" description="Rename resource &apos;_02_LecturaTeclado&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/_02_LecturaTeclado" name="_03_LecturaTeclado" stamp="1451476556826" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;CursoRuby/src/Métodos&apos; to &apos;_02_Métodos&apos;" description="Rename resource &apos;Métodos&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Métodos" name="_02_Métodos" stamp="1451476567372" updateReferences="true"/>
+</session>

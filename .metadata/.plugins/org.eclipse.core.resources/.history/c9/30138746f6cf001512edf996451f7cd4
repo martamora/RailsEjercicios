@@ -1,0 +1,15 @@
+<h1>Formulario Index Templates</h1>
+
+<%
+
+variable_enlace = "Rutas"
+variable_mostrar = "Rutas"
+%>
+
+<%
+
+variable_enlace = "Mostrar"
+variable_mostrar = "Mostrar"
+%>
+
+

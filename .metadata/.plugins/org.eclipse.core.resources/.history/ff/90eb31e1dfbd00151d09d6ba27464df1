@@ -1,0 +1,12 @@
+class Procesador
+  def initialize (cache, nucleo, velocidad, tipo)
+    @cache = cache
+    @nucleo = nucleo
+    @velocidad = velocidad
+    @tipo = tipo
+  end
+  
+def to_s
+  "#{cache}, #{nucleo}, #{velocidad}, #{tipo}"
+end
+end

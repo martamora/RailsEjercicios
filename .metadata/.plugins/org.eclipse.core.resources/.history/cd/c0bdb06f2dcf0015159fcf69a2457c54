@@ -1,0 +1,15 @@
+
+
+<%= form_tag({controller:"ProcesarFormularios",action:"primera_pagina"},method:"get") do %>
+
+	<%=label_tag(:nombre, "Indica tu nombre")%>
+	<%=text_field_tag(:nombre)%><br>
+	
+	<%= check_box_tag("check_box_numeros[]", "uno")%> Uno<br>
+	<%= check_box_tag("check_box_numeros[]", "dos")%> Dos
+	
+	<%= submit_tag ("Enviar información")%>
+
+<%end%>
+
+

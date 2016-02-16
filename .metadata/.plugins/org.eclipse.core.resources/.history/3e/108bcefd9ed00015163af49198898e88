@@ -1,0 +1,18 @@
+<h1> Lista de Registros </h1>
+
+<table>
+	<tr>
+		<th>Titulo</th>
+		<th>Comentarios</th>
+	</tr>
+	<tbody>
+	<% for registro in @registros %>
+	<tr>
+		<td><%=registro.titulo%></td>
+		<td><%=registro.comentarios%></td>
+	</tr>
+	<% end%>
+	</tbody>
+</table>
+
+<%= form_tag({controller:"Registro",action:"create"},method:"get") do %>

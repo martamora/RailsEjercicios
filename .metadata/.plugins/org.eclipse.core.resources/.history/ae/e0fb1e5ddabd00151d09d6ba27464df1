@@ -1,0 +1,11 @@
+class Almacenamiento
+  def initialize (tipo, velocidad, capacidad)
+    @tipo = tipo
+    @velocidad = velocidad
+    @capacidad = capacidad
+  end
+  
+def to_s
+  "#{tipo}, #{velocidad}, #{capacidad}"
+end
+end

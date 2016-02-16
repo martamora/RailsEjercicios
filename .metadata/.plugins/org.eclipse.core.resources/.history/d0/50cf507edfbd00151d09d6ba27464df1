@@ -1,0 +1,29 @@
+class Ordenador
+  def initialize marca, sistemaoperativo, procesador, ram, almacenamiento, tgrafica
+    @marca = marca
+    @sistemaoperativo = sistemaoperativo
+    @procesador = procesador
+    @ram = ram
+    @almacenamiento = almacenamiento
+    @tgrafica = tgrafica
+    
+  end
+  def setProcesador procesador
+    @procesador = procesador
+  end
+  
+  def setRam  ram
+    @ram = ram
+  end
+  
+  def setAlmacenamiento almacenamiento
+    @almacenamiento = almacenamiento
+  end
+    
+    def setTgrafica tgrafica
+      @tgrafica = tgrafica
+    end
+  def to_s
+    "Marca: #{@marca}, SO: #{@sistemaoperativo}, procesador: #{@procesador}, ram: #{ram}, almacenamiento: #{@almacenamiento}, tgrafica: #{@tgrafica}"
+  end
+end

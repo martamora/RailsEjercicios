@@ -1,0 +1,6 @@
+<form action="musica/modificar">
+	
+	Nombre <input type="text" name="nombre"  value="<%@musica.nombre%>"/>
+	Artista <input type="text" name="artista"  value="<%@musica.artista%>"/>
+	anio <input type="number" name="anio"  value="<%@musica.anio%>"/>
+</form>

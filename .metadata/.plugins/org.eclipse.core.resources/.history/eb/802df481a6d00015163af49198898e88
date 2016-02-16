@@ -1,0 +1,46 @@
+class RegistroController < ApplicationController
+  def new
+    #Registro.all nos devuelve todos los registros de la bbdd
+    #Al herededar de ActiveRecord, estarán automáticamente implementados
+    #sus accesos. Los registros van en un array
+    @registros = Registro.all
+    if @registros.size >0
+      puts @registros[0].titulo
+      puts @registros.first.id
+      puts @registros.last.id
+    end
+  end
+  
+  def create
+    titulo=params[:titulo]
+    comentarios=params[:comentarios]
+    parametrosHash = {}
+    #La clave corresponde con el nombre de la columan de la base de datos
+    parametrosHash[:titulo]=titulo
+    parametrosHash[:comentarios]=comentarios
+
+    #Le pasamos el Hash
+    Registro.create(parametrosHash)
+    @registros= Registro.all
+    render "new"
+  end
+  
+  def delete
+    titulo = params[:titulo].to_i
+    #El método delete automáticamente borra por id. 
+    #Tb le podemos pasar un array de ids y tb lo borra.
+    #Registro.delete id
+    #Podemos tb borrar por otros campos. 
+    #Pero deberemos hacer una búsqueda primero.
+    #Esto nos devuelve una lista de coincidencias
+    registrosEncontrados = Registro.where(:titulo => titulo)
+    registro = registrosEncontrados[0]
+    registro.destroy
+    
+    @registros=Registro.all
+    render "new"
+    
+    
+  end
+  
+end

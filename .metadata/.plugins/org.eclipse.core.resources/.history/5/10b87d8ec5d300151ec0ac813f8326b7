@@ -1,0 +1,6 @@
+class Registro < ActiveRecord::Base
+  
+  #Con esta línea validamos que no podamos meter en BBDD un titulo que esté vacío
+  validates_presence_of :titulo message 'El ítulo no puede estar vacío'
+  
+end

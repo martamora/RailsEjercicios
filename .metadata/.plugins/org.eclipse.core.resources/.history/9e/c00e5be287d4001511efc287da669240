@@ -1,0 +1,9 @@
+<form action="/musica/new">
+	
+	<input type="hidden" name="id"  value="<%=@musica.id%>"/>
+	
+	Nombre <input type="text" name="nombre"  value="<%=@musica.nombre%>"/>
+	Artista <input type="text" name="artista"  value="<%=@musica.artista%>"/>
+	Anio <input type="number" name="anio"  value="<%=@musica.anio%>"/>
+	<input type="submit" name="modificar" value="modificar" ></br>
+</form>
